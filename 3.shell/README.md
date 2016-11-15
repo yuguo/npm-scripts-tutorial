@@ -45,3 +45,27 @@ END
 
 当接下来的文件内容中某一行等于WORD时（不能有多余的空格），输入结束。
 
+### 函数
+
+函数的声明比较简单，需要注意的是返回值用`echo`，而不是`return`。
+
+还有，调用函数不需要括号，而是使用空格来传递参数。
+
+```
+#!/bin/bash
+
+function getSum(){
+  local num4=$1
+  local num5=$2
+  local sum=$((num4+num5))
+  echo $sum
+}
+
+num1=5
+num2=6
+num3=$(getSum num1 num2)
+echo "$num3"
+```
+### if...then...else...fi
+
+if.sh
