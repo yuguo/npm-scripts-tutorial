@@ -2,7 +2,7 @@
 
 开始之前，希望你已经阅读了阮一峰老师的[npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)，了解了关于 npm scripts 的基本知识。
 
-本项目专注于实战和一些细节
+本项目专注于实战和一些细节。
 
 ## 了解`package.json`
 
@@ -24,7 +24,9 @@
 
 这段代码的意思是，当在命令行中运行
 
-`npm run test`
+```
+npm run test
+```
 
 的时候，就几乎等同于运行
 
