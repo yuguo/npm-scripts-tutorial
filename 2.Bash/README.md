@@ -23,7 +23,7 @@ echo Hello World
 
 `bash`也是`sh`的一种实现，不过后续也增加了很多新的扩展，准确讲它是`sh`的一门“方言”。
 
-因为`sh`是一个规范而不是一个实现，所以`/bin/sh`会指向一个实际的语言实现（通过syslink或者hard link）。
+因为`sh`是一个规范而不是一个实现，所以`/bin/sh`会指向一个真正的语言实现（通过syslink或者hard link）。
 
 在大部分GNU/Linux系统中，`/bin/sh`指向`/bin/bash`。
 
@@ -33,7 +33,7 @@ echo Hello World
 #!/bin/sh
 ```
 
-就等于听天由命看系统的`sh`指向哪里（在现代的Debian和Ubuntu里面默认是`dash`）。
+就等于看系统的`sh`指向哪里（在现代的Debian和Ubuntu里面默认是`dash`）。
 
 如果我们写
 
@@ -42,6 +42,12 @@ echo Hello World
 ```
 
 就会去直接寻找bash，如果没有bash就报错。
+
+想查看你的系统中有哪些可用的shell，可以输入
+
+```
+cat /etc/shells
+```
 
 ### 权限问题
 
