@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -r dist/*"
+    "clean": "rm -r dist/*",
+    "clean2": "rimraf dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp-clean": "^0.3.2"
+    "gulp-clean": "^0.3.2",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
   }
 }
