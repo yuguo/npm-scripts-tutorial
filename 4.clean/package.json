@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -r dist/*",
-    "clean2": "rimraf dist"
+    "clean2": "rimraf dist/*"
   },
   "author": "",
   "license": "ISC",
