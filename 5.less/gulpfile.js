@@ -5,5 +5,5 @@ var path = require('path');
 gulp.task('default', function(){
 	return gulp.src('./less/**/*.less')
 		.pipe(less())
-		.pipe(gulp.dest('./public/css'));
+		.pipe(gulp.dest('./public/gulpcss'));
 })

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:styles": "for i in less/*.less;do f=${i##*/}; lessc $i public/npmcss/${f%%.*}.css; break; done;"
   },
   "author": "",
   "license": "ISC",
