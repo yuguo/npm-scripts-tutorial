@@ -41,7 +41,7 @@ echo \"Error: no test specified\" && exit 1
 * 可以利用 npm 提供的信息和辅助功能。
 * 可以调用任意的 npm 包，比起 gulp 或 grunt 等任务构建工具能够使用更多的包，效率也更高。
 
-npm 脚本会使用当前系统的 shell 来运行，在 linux、OS X、
+npm 脚本会使用当前系统的 shell 来运行，在 linux、OS X 中，就是 Bash。
 
 ## 小试牛刀
 
