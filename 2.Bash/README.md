@@ -1,3 +1,5 @@
+# Bash基础
+
 npm scripts实际上是在当前操作系统的shell中运行一段命令，而在Linux，Solaris，BSD和Mac OSX系统中，都安装了 Bash 作为默认 shell，所以掌握 Bash 编程是使用npm scripts的基础。
 
 ## 直接在shell中输入
