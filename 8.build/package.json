@@ -1,0 +1,21 @@
+{
+  "name": "8.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scripts": "browserify assets/scripts/main.js | uglifyjs - > public/main.min.js",
+    "prebuild:scripts": "eslint assets/scripts/main.js",
+    "build:styles": "for i in `ls less/**/*.less`;do f=${i#*/}; lessc $i public/npmcss/${f%%.*}.css; break; done;",
+    "build": "npm run build:scripts -s && npm run build:styles -s"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "eslint": "^3.10.2",
+    "less": "^2.7.1",
+    "uglify-js": "^2.7.4"
+  }
+}
