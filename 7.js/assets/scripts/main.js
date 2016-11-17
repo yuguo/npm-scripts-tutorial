@@ -1,3 +1,4 @@
+"use strict";
 var foo = require('./foo.js');
 var bar = require('../lib/bar.js');
 

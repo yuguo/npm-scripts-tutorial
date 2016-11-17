@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scripts": "browserify assets/scripts/main.js > public/main.min.js"
+    "build:scripts": "browserify assets/scripts/main.js > public/main.min.js",
+    "prebuild:scripts": "eslint assets/scripts/main.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "^13.1.1"
+    "browserify": "^13.1.1",
+    "eslint": "^3.10.2"
   }
 }

@@ -1,0 +1,201 @@
+rules:
+  indent:
+    - 2
+    - 4
+  # quotes:
+  #   - 1
+  #   - single
+  linebreak-style:
+    - 2
+    - unix
+  semi:
+    - 2
+    - always
+  no-console: 1
+  no-debugger: 1
+  no-empty: 1
+  valid-typeof: 1
+  accessor-pairs: 1
+  block-scoped-var: 2
+  consistent-return: 2
+  curly: 1
+  dot-location:
+    - 2
+    - property
+  eqeqeq:
+    - 1
+    - "allow-null"
+  guard-for-in: 1
+  no-alert: 1
+  no-else-return: 1
+  no-div-regex: 1
+  no-eval: 2
+  no-extend-native: 2
+  no-extra-bind: 1
+  no-fallthrough: 1
+  no-floating-decimal: 1
+  no-implied-eval: 2
+  no-invalid-this: 0 # Currently the way we do things angers this rule
+  no-lone-blocks: 2
+  no-loop-func: 2
+  no-multi-spaces: 1
+  no-multi-str: 2
+  no-new-func: 2
+  no-new-wrappers: 2
+  no-new: 1
+  no-octal-escape: 2
+  no-proto: 1
+  no-redeclare:
+    - 2
+    - builtinGlobals: true
+  no-return-assign: 1
+  no-script-url: 2
+  no-self-compare: 2
+  no-sequences: 1
+  no-throw-literal: 2
+  no-unused-expressions: 2
+  no-useless-concat: 1
+  no-void: 2
+  no-warning-comments:
+    - 1
+    -
+      terms:
+        - todo
+        - fixme
+        - hack
+        - bug
+        - why
+      location: "start"
+  no-with: 2
+  vars-on-top: 0
+  wrap-iife:
+    - 2
+    - inside
+  yoda:
+    - 1
+    - never
+  strict:
+    - 2
+    - global
+  no-label-var: 2
+  no-shadow-restricted-names: 2
+  no-shadow:
+    - 1
+    -
+      builtinGlobals: false # There are a lot of stupid globals like 'name'
+      hoist: "all"
+  no-undef-init: 2
+  no-unused-vars:
+    - 1
+    -
+      vars: "all"
+      args: "none"
+  no-use-before-define: 2
+  new-parens: 2
+  no-array-constructor: 2
+  no-new-object: 2
+  no-unneeded-ternary: 2
+  arrow-parens: 2
+  constructor-super: 2
+  no-class-assign: 2
+  no-const-assign: 2
+  no-dupe-class-members: 2
+  no-this-before-super: 2
+  require-yield: 1
+  # Non-subjective
+  eol-last: 2
+  no-trailing-spaces: 2
+  # Let's get subjective!
+  array-bracket-spacing: 1
+  block-spacing: 1
+  brace-style:
+    - 1
+    - 1tbs
+  # camelcase: 1
+  comma-spacing: 1
+  comma-style:
+    - 1
+    - last
+  computed-property-spacing: 1
+  consistent-this:
+    - 1
+    - self
+  func-style:
+    - 1
+    - declaration
+  jsx-quotes: 1
+  key-spacing:
+    - 1
+    -
+      beforeColon: false
+      afterColon: true
+      mode: "minimum"
+      # align: "value" # Some Day :(
+  lines-around-comment:
+    - 1
+    -
+      beforeBlockComment: true
+      afterBlockComment: false
+      beforeLineComment: false
+      afterLineComment: false
+      allowBlockStart: true
+      allowBlockEnd: false
+  max-nested-callbacks:
+    - 1
+    - 3
+  new-cap: 1
+  no-inline-comments: 1 # These break formatters (yes this comment is ironic)
+  no-lonely-if: 1
+  no-mixed-spaces-and-tabs:
+    - 1
+    - smart-tabs
+  no-multiple-empty-lines:
+    - 1
+    - max: 3
+  no-nested-ternary: 1
+  no-spaced-func: 1
+  padded-blocks:
+    - 1
+    - never
+  quote-props:
+    - 1
+    - consistent-as-needed
+  semi-spacing: 1
+  operator-linebreak: 1
+  object-curly-spacing:
+    - 1
+    - always
+  one-var:
+    - 1
+    - initialized: "never"
+  space-after-keywords: 1
+  space-before-keywords: 1
+  space-before-blocks: 1
+  space-before-function-paren:
+    - 1
+    - never
+  space-in-parens:
+    - 1
+    - never
+  space-infix-ops: 1
+  space-return-throw-case: 1
+  space-unary-ops: 1
+  spaced-comment:
+    - 1
+    - always
+    -
+      markers:
+        - "/"
+        - "!"
+      exceptions:
+        - "-"
+        - "*"
+  arrow-spacing: 1
+  generator-star-spacing: 1
+  # prefer-arrow-callback: 1
+  comma-dangle:
+    - 1
+    - "never"
+env:
+  es6: true
+  # browser: true
