@@ -1,1 +1,4 @@
-module.exports = function (n) { return n * 111 }
+"use strict";
+module.exports = function(n) {
+    return n * 111;
+};

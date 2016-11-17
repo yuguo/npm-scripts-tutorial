@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scripts": "browserify assets/scripts/main.js | uglifyjs - > public/main.min.js",
-    "prebuild:scripts": "eslint assets/scripts/main.js",
-    "postbuild:scripts": "hashmark public/**.js -l 8 'public/{name}.{hash}.js' > public/js.map",
-    "build:styles": "for i in `ls less/**/*.less`;do f=${i#*/}; lessc $i public/npmcss/${f%%.*}.css; break; done;",
+    "build:scripts": "browserify assets/scripts/main.js | uglifyjs - > tmp/main.js",
+    "prebuild:scripts": "eslint assets/scripts/**.js",
+    "postbuild:scripts": "hashmark -l 8 'tmp/main.js' 'public/main.{hash}.js' > public/js.map",
+    "build:styles": "for i in `ls less/**.less`;do f=${i#*/}; lessc $i public/npmcss/${f%%.*}.css; break; done;",
     "build": "npm run build:scripts -s && npm run build:styles -s"
   },
   "author": "",
