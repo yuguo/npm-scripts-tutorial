@@ -1,15 +1,15 @@
 # npm scripts实战进阶
 
 ## 目录
-1. [npm scripts简介](tree/master/1.intro)
-2. [Bash编程](tree/master/2.Bash)
-3. [shell编程](tree/master/3.shell)
-4. [示例：clean](tree/master/4.clean)
-5. [示例：less](tree/master/5.less)
-6. [示例：stream](tree/master/6.stream)
-7. [示例：js](tree/master/7.js)
-8. [示例：build](tree/master/8.build)
-9. [示例：hashname](tree/master/9.hashname)
+1. [npm scripts简介](1.intro)
+2. [Bash编程](2.Bash)
+3. [shell编程](3.shell)
+4. [示例：clean](4.clean)
+5. [示例：less](5.less)
+6. [示例：stream](6.stream)
+7. [示例：js](7.js)
+8. [示例：build](8.build)
+9. [示例：hashname](9.hashname)
 
 ## 开始之前
 
